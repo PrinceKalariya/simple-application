@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Practical-4</string>
+    <string name="dial_no">DIAL NO</string>
+    <string name="open_url">OPEN URL</string>
+    <string name="type_phone_number_here">Type Phone Number Here</string>
+    <string name="name_prince_kalariya">Name : Prince Kalariya</string>
+    <string name="en_no_19012021017">En_No : 19012021017</string>
+    <string name="type_url_here">Type url here</string>
+</resources>

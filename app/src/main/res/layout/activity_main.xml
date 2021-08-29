@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5722"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Btn_No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/dial_no"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:backgroundTint="#94E4DD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_no" />
+
+    <Button
+        android:id="@+id/Btn_Url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/open_url"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:backgroundTint="#94E4DD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_url" />
+
+    <EditText
+        android:id="@+id/pt_no"
+        android:layout_width="278dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/type_phone_number_here"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/pt_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/type_url_here"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_No" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_prince_kalariya"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ib_alarm"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:keepScreenOn="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_camara"
+        app:srcCompat="@drawable/ic_alarm"
+        tools:ignore="VectorDrawableCompat,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ib_call"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-100dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_gallery"
+        app:srcCompat="@drawable/ic_call"
+        tools:ignore="VectorDrawableCompat,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ib_camara"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_camara"
+        tools:ignore="VectorDrawableCompat,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ib_contact"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ib_alarm"
+        app:layout_constraintStart_toEndOf="@+id/ib_call"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789"
+        app:srcCompat="@drawable/ic_contact"
+        tools:ignore="VectorDrawableCompat,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/ib_gallery"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_gallery"
+        tools:ignore="VectorDrawableCompat,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
